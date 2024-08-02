@@ -7,7 +7,7 @@ import { Suspense } from "react";
 function Layout() {
   return (
     <>
-      <Header />
+    {/*  <Header />*/}
       <main>
         <Suspense fallback={<Loader />}>
           <Outlet />

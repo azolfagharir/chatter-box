@@ -1,7 +1,14 @@
+import Wrapper from "../components/Wrapper"
 export default function Home() {
     return (
-        <div>
-            <h1>Home page</h1>
-        </div>
+        <>
+             <Wrapper>
+                <div className="bg-custome_2 px-48 mx-2">
+
+                    <h1 className="text-whitetext-blue-800">Hello, World!</h1>
+                </div>
+            </Wrapper>
+        </>
+        
     )
 }

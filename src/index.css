@@ -18,6 +18,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* src/index.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 a {
   font-weight: 500;
