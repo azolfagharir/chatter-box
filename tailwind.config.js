@@ -7,6 +7,10 @@ export const theme = {
     colors: {
       MyOwn: '#e9edf7',
       custome_2:'#f5f8fe',
+      custome_eye:'#eff6fa',
+    },width: {
+      '288': '32rem',
+      '69': '116rem',
     },
   },
 };
