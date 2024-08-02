@@ -4,7 +4,9 @@ function ChatApp() {
   return (
     <>
         <InputBox />  
-        <p className="text-3xl font-bold underline">nefijenf</p>      
+        <div className="bg-blue-500 text-white p-4">
+            Hello, Tailwind!
+        </div>
     </>
   )
 }

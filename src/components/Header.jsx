@@ -11,11 +11,12 @@ export default function Header() {
         <nav className="navbar">
           <ul className="nav-list">
             <li className="nav-item text-black-400">
-              <Link to={PathConstants.ChatApp}>ChatApp</Link>
+              <Link className="text-black-900" to={PathConstants.ChatApp}>ChatApp</Link>
             </li>
           </ul>
         </nav>
       </div>
+      <p className="text-blue-500">sdme</p>
     </header>
   );
 }
