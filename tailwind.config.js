@@ -13,6 +13,8 @@ export const theme = {
       hover_admin_panel:'#2a78a4',
       PanelHeader:'#f5f8fe',
       PanelHeaderText:'#55768b',
+      lovelygreen:'#e7f4fb',
+      mygray:'#728d9f',
     },width: {
       '288': '32rem',
     },

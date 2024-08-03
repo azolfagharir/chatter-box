@@ -1,21 +1,44 @@
 const SideBarList = [
-    { name: 'myservice', imagename: 'chatter-box/public/MyServices.png', imagename: 'MyService' },
-  ];
+    {
+        name: "سرویس های من",
+        imagename: "/public/MyServices.png",
+        component: "MyService",
+      }, {
+        name: "هاست ابری",
+        imagename: "/public/domain.png",
+        component: "MyService",
+      },
+];
 export default function RightSideBarSections() {
     return (
-        <>
-               {SideBarList.map((item, index) => (
-          <li key={index}>
-            <button
-              onClick={() => setActiveComponent(item.name)}
-              className="flex items-center w-full text-left px-4 py-2 rounded hover:bg-gray-700"
+        <div className="flex flex-col space-y-4">
+          {SideBarList.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-center space-x-3 hover:bg-lovelygreen p-2 rounded"
             >
-              <img src={item.imagename} alt={item.name} className="w-6 h-6 mr-2" />
-              {item.name}
-            </button>
-          </li>
-        ))}
-        </>
+              {/* Narrow Image */}
+              <img className="w-8 h-8" src="/public/narrow.png" alt="narrow" />
+      
+              {/* Sidebar Button */}
+              <button
+                onClick={() => setActiveComponent(item.name)}
+                className="flex items-center text-left px-4 py-2 rounded text-mygray border-none bg-transparent w-full"
+              >
+                {item.name}
+              </button>
+      
+              {/* Icon/Image Container */}
+              <div className="w-6 h-6 ml-auto flex items-center justify-center rounded">
+                <img
+                  src={item.imagename}
+                  alt={item.name}
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       );
+
     }
-    
