@@ -1,8 +1,9 @@
+import Panel from "../pages/Panel";
 
 
 const PathConstants = {
     Home: "/",
-    ChatApp: "/ChatApp",
+    Panel: "/Panel",
   }
 
   export default PathConstants;

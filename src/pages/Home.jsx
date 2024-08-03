@@ -53,7 +53,7 @@ export default function Home() {
             <input
               className="bg-white h-[44px] w-full shadow text-right pr-20 rounded-2xl focus:outline-none focus:shadow-xl focus:shadow-MyOwn transition-shadow duration-300"
               required
-              type="email"
+              type="password"
               placeholder="کلمه عبور خود را وارد کنید"
             />
             <button
@@ -98,19 +98,20 @@ export default function Home() {
               {/* Second Element (aligned to the left) */}
             </div>
             <br />
-            <button
-              className="bg-admin_apnel shadow-xl text-white w-full rounded-2xl py-2 transition-shadow duration-300 hover:shadow-3xl hover:shadow-admin_shadow hover:bg-hover_admin_panel"
-              type="submit"
-            >
-              ورود به پنل ادمین
-            </button>
+            <Link href="#" className="">
+              <button
+                className="bg-admin_apnel shadow-xl text-white w-full rounded-2xl py-2 transition-shadow duration-300 hover:shadow-3xl hover:shadow-admin_shadow hover:bg-hover_admin_panel"
+                type="submit"
+              >
+                ورود به پنل ادمین
+              </button>
+            </Link>
           </form>
           <br />
           <Link href="#" className="text-blue-500 hover:underline my-16">
-                ثبت نام نکرده ام
+            ثبت نام نکرده ام
           </Link>
           <br />
-          
         </div>
       </Wrapper>
     </>

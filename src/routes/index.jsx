@@ -2,10 +2,10 @@ import React from "react"
 import PathConstants from "./pathConstants"
 
 const Home = React.lazy(() => import("../pages/Home"))
-const ChatApp = React.lazy(() => import("../pages/ChatApp"))
+const Panel = React.lazy(() => import("../pages/Panel"))
 const routes = [
     { path: PathConstants.Home, element: <Home /> },
-    {path: PathConstants.ChatApp, element:<ChatApp />},
+    {path: PathConstants.Panel, element:<Panel />},
 
 ];
 

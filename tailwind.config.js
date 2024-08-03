@@ -11,6 +11,8 @@ export const theme = {
       admin_apnel:'#318dc1',
       admin_shadow:'#40b3db',
       hover_admin_panel:'#2a78a4',
+      PanelHeader:'#f5f8fe',
+      PanelHeaderText:'#55768b',
     },width: {
       '288': '32rem',
     },
