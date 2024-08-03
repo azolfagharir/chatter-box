@@ -10,7 +10,7 @@ export default function Header() {
         </h1>
         <nav className="navbar">
           <ul className="nav-list">
-            <li className="nav-item">
+            <li className="nav-item text-black-400">
               <Link to={PathConstants.ChatApp}>ChatApp</Link>
             </li>
           </ul>

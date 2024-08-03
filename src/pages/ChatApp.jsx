@@ -1,9 +1,9 @@
-
+import InputBox from "../components/InputBox";
 function ChatApp() {
 
   return (
     <>
-        <p>hello world</p>
+        <InputBox />        
     </>
   )
 }
