@@ -3,7 +3,8 @@ function ChatApp() {
 
   return (
     <>
-        <InputBox />        
+        <InputBox />  
+        <p className="text-3xl font-bold underline">nefijenf</p>      
     </>
   )
 }
