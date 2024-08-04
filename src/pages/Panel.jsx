@@ -21,10 +21,10 @@ export default function Panel() {
   return (
     <>
       <PanelHeader />
-      <div className="flex">
+      <div className="flex ">
         {/* Sidebar */}
         <div className="absolute right-8 top-36 w-[234px] bg-white rounded-full">
-          <div className="bg-theethic rounded">
+          <div className="bg-theethic rounded-2xl max-h-[534px] overflow-y-auto">
             <RightSideBarSections 
               activeComponent={activeComponent} 
               setActiveComponent={setActiveComponent} 

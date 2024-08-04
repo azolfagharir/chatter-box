@@ -5,9 +5,59 @@ const SideBarList = [
     component: "MyService",
   },
   {
-    name: "داشبورد",
+    name:"هاست ابری",
+    imagename: "/public/cloudy-server.png",
+    component: "cloudy-host",
+  }, 
+  {
+    name:"دامنه",
     imagename: "/public/domain.png",
-    component: "Dashboard",
+    component: "domain",
+  }, 
+  {
+    name:"سرور ابری",
+    imagename: "/public/cloudy-server.png",
+    component: "cloudy-server",
+  }, 
+  {
+    name:"فضای ابری",
+    imagename: "/public/cloudy-space.png",
+    component: "cloudy-space",
+  }, 
+  {
+    name:"SSL",
+    imagename: "/public/SSL.png",
+    component: "SSL",
+  }, 
+  {
+    name:"CDN",
+    imagename: "/public/CDN.png",
+    component: "CDN",
+  }, 
+  {
+    name:"Paas",
+    imagename: "/public/PaaS.png",
+    component: "PaaS",
+  }, 
+  {
+    name:"هاست دانلود",
+    imagename: "/public/download-host.png",
+    component: "download-host",
+  }, 
+  {
+    name:"صورت حساب",
+    imagename: "/public/payment.png",
+    component: "payment",
+  },
+  {
+    name:"تیکت",
+    imagename: "/public/ticket.png",
+    component: "ticket",
+  },
+  {
+    name:"حساب کاربری",
+    imagename: "/public/account.png",
+    component: "account",
   },
   // Add more items as needed
 ];
