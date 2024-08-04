@@ -15,6 +15,7 @@ export const theme = {
       PanelHeaderText:'#55768b',
       lovelygreen:'#e7f4fb',
       mygray:'#728d9f',
+      theethic:'#f5f8fe',
     },width: {
       '288': '32rem',
     },
