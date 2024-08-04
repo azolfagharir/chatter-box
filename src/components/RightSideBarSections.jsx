@@ -6,23 +6,23 @@ const SideBarList = [
   },
   {
     name:"هاست ابری",
-    imagename: "/public/cloudy-server.png",
-    component: "cloudy-host",
+    imagename: "/public/cloudyhost.png",
+    component: "CloudyHost",
   }, 
   {
     name:"دامنه",
-    imagename: "/public/domain.png",
-    component: "domain",
+    imagename: "/public/Domain.png",
+    component: "Domain",
   }, 
   {
     name:"سرور ابری",
-    imagename: "/public/cloudy-server.png",
-    component: "cloudy-server",
+    imagename: "/public/CloudyServer.png",
+    component: "CloudyServer",
   }, 
   {
     name:"فضای ابری",
-    imagename: "/public/cloudy-space.png",
-    component: "cloudy-space",
+    imagename: "/public/CloudySpace.png",
+    component: "CloudySpace",
   }, 
   {
     name:"SSL",
@@ -41,23 +41,23 @@ const SideBarList = [
   }, 
   {
     name:"هاست دانلود",
-    imagename: "/public/download-host.png",
-    component: "download-host",
+    imagename: "/public/DownloadHost.png",
+    component: "DownloadHost",
   }, 
   {
     name:"صورت حساب",
-    imagename: "/public/payment.png",
-    component: "payment",
+    imagename: "/public/Payment.png",
+    component: "Payment",
   },
   {
     name:"تیکت",
-    imagename: "/public/ticket.png",
-    component: "ticket",
+    imagename: "/public/Tickets.png",
+    component: "Tickets",
   },
   {
     name:"حساب کاربری",
     imagename: "/public/account.png",
-    component: "account",
+    component: "Account",
   },
   // Add more items as needed
 ];

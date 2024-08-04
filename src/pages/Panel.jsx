@@ -3,18 +3,47 @@ import PanelHeader from "../components/PanelHeader";
 import RightSideBarSections from "../components/RightSideBarSections";
 import Dashboard from "../components/Dashboard";
 import MyService from "../components/MyServices";
+import Domain from "../components/Domain";
+import CloudyHost from "../components/CloudyHost";
+import CloudyServer from "../components/CloudyServer";
+import CloudySpace from "../components/CloudySpace";
+import SSL from "../components/Ssl";
+import CDN from "../components/CDN.jsx";
+import PaaS from "../components/Paas";
+import DownloadHost from "..//components/downloadHost.jsx";
+import Payment from "..//components/payment.jsx";
+import Tickets from "..//components/Ticket.jsx";
+import Account from "..//components/Account";
 export default function Panel() {
   const [activeComponent, setActiveComponent] = useState('Dashboard');
 
   const renderComponent = () => {
     switch (activeComponent) {
-      case 'Dashboard':
-        return <Dashboard />;
       case 'MyService':
         return <MyService />;
+        case 'CloudyHost':
+          return <CloudyHost />;
+          case 'Domain':
+          return <Domain />;
+          case 'CloudyServer':
+          return <CloudyServer />;
+          case 'CloudySpace':
+          return <CloudySpace />;
+          case 'SSL':
+          return <SSL />;
+          case 'CDN':
+          return <CDN />;
+          case 'PaaS':
+          return <PaaS />;
+          case 'Payment':
+          return <Payment />; 
+          case 'Tickets':
+          return <Tickets />;
+            case 'Account':
+              return <Account />;
       // Add more cases for other components
       default:
-        return <Dashboard />; // Default component if no match
+        return <MyService />; // Default component if no match
     }
   };
 
