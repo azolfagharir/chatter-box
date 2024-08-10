@@ -16,6 +16,7 @@ export const theme = {
       lovelygreen:'#e7f4fb',
       mygray:'#728d9f',
       theethic:'#f5f8fe',
+      helloworld:'#f5f8fe',
     },width: {
       '288': '32rem',
     },

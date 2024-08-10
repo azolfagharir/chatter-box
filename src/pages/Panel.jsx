@@ -1,8 +1,7 @@
 import { useState } from "react";
 import PanelHeader from "../components/PanelHeader";
 import RightSideBarSections from "../components/RightSideBarSections";
-import Dashboard from "../components/Dashboard";
-import MyService from "../components/MyServices";
+import MyService from "../components/MyServices/MyServices";
 import Domain from "../components/Domain";
 import CloudyHost from "../components/CloudyHost";
 import CloudyServer from "../components/CloudyServer";
@@ -10,11 +9,12 @@ import CloudySpace from "../components/CloudySpace";
 import SSL from "../components/Ssl";
 import CDN from "../components/CDN.jsx";
 import PaaS from "../components/Paas";
-import DownloadHost from "..//components/downloadHost.jsx";
 import Payment from "..//components/payment.jsx";
 import Tickets from "..//components/Ticket.jsx";
 import Account from "..//components/Account";
-export default function Panel() {
+export default function Panel(props) {
+  const [SidebarShown, setSidebarShown] = useState(false);
+
   const [activeComponent, setActiveComponent] = useState('Dashboard');
 
   const renderComponent = () => {
@@ -49,17 +49,16 @@ export default function Panel() {
 
   return (
     <>
-      <PanelHeader />
+      <PanelHeader setSidebarShown={setSidebarShown} SidebarShown={SidebarShown} />
       <div className="flex ">
         {/* Sidebar */}
-        <div className="absolute right-8 top-36 w-[234px] bg-white rounded-full">
-          <div className="bg-theethic rounded-2xl max-h-[534px] overflow-y-auto">
-            <RightSideBarSections 
-              activeComponent={activeComponent} 
-              setActiveComponent={setActiveComponent} 
+        <div         className={`bg-theethic rounded-2xl max-h-[534px] overflow-y-auto right-10 top-20 lg:absolute ${SidebarShown ? 'sm:absolute ' : 'sm:hidden'}`}
+        >
+        <RightSideBarSections
+              activeComponent={activeComponent}
+              setActiveComponent={setActiveComponent}
             />
           </div>
-        </div>
 
         {/* Main Content Area */}
         <main className="w-full p-4">
@@ -69,3 +68,4 @@ export default function Panel() {
     </>
   );
 }
+
