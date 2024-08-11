@@ -1,8 +1,8 @@
-export default function IaaS(){
+export default function Watch(){
     return(
             <>
                 <div>
-                    this is IaaS
+                    this is Watch
                 </div>
             </>
     )

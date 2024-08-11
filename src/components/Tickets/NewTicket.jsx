@@ -1,8 +1,8 @@
-export default function OtherProducts(){
+export default function NewTicket(){
     return(
             <>
                 <div>
-                    this is OtherProducts
+                    this is NewTicket
                 </div>
             </>
     )

@@ -1,8 +1,8 @@
-export default function Domain(){
+export default function Progress(){
     return(
             <>
                 <div>
-                    this is Domain
+                    this is Progress
                 </div>
             </>
     )

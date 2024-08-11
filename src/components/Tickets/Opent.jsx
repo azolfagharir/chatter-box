@@ -1,8 +1,8 @@
-export default function AllSrc(){
+export default function Opent(){
     return(
             <>
                 <div>
-                    this is AllSrc
+                    this is Opent
                 </div>
             </>
     )

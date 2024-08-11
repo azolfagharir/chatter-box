@@ -1,8 +1,8 @@
-export default function SSL(){
+export default function Closed(){
     return(
             <>
                 <div>
-                    this is SSL
+                    this is Closed
                 </div>
             </>
     )

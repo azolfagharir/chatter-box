@@ -1,8 +1,8 @@
-export default function CDN(){
+export default function Answeared(){
     return(
             <>
                 <div>
-                    this is cdn
+                    this is Answeared
                 </div>
             </>
     )
