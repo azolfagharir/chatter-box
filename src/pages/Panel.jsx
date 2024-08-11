@@ -10,7 +10,7 @@ import SSL from "../components/Ssl";
 import CDN from "../components/CDN.jsx";
 import PaaS from "../components/Paas";
 import Payment from "..//components/payment.jsx";
-import Tickets from "..//components/Ticket.jsx";
+import Tickets from "..//components/Tickets/Ticket.jsx";
 import Account from "..//components/Account";
 export default function Panel(props) {
   const [SidebarShown, setSidebarShown] = useState(false);
