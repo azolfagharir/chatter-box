@@ -1,4 +1,4 @@
-export default function NewTicket(){
+export default function TicketNew(){
     return(
             <>
                 <div>

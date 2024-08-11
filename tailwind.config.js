@@ -1,3 +1,5 @@
+import NewTicket from './src/pages/NewTicket';
+
 /** @type {import('tailwindcss').Config} */
 export const content = [
   "./src/**/*.{js,jsx,ts,tsx}",
@@ -20,6 +22,8 @@ export const theme = {
       thecolor:'#55768b',
       thecolor2:'#318dc1',
       hello2:'#f5f8fe',
+      NewTicket:'#318dc1',
+      NewTicket2:'#2a78a4',
     },width: {
       '288': '32rem',
     },
