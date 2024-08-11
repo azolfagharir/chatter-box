@@ -17,16 +17,23 @@ export const theme = {
       mygray:'#728d9f',
       theethic:'#f5f8fe',
       helloworld:'#f5f8fe',
+      thecolor:'#55768b',
+      thecolor2:'#318dc1',
+      hello2:'#f5f8fe',
     },width: {
       '288': '32rem',
     },
     spacing: {
       '292': '31rem',
+      '260': '28rem',
     },inset: {
       eye_top: '14rem', // Custom value
     }, boxShadow: {
       '3xl': '0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23)', // Custom intense shadow
       'custom-color': '0 10px 15px rgba(255, 165, 0, 0.5)' // Custom shadow with specific color (e.g., orange)
+    },
+    fontSize: {
+      'huge': '32rem', // Define the custom font size
     },
   },
 };

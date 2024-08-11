@@ -83,8 +83,11 @@ export default function RightSideBarSections({ setActiveComponent, activeCompone
           <div className="w-6 h-6 ml-auto flex items-center justify-center rounded">
             <img src={item.imagename} alt={item.name} className="w-full h-full" />
           </div>
+          
         </div>
       ))}
+       
     </div>
+
   );
 }
