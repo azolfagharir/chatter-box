@@ -2,9 +2,9 @@ import { useState } from "react";
 
 export default function NewSection(){
     const sectionMyServices = [
-        { name: "فنی", quantity: "7" },
-        { name: "فروش", quantity: "7" },
-        { name: "مالی", quantity: "7" },
+        { name: "فنی", quantity: "7", src:'support' },
+        { name: "فروش", quantity: "7", src:'sell' },
+        { name: "مالی", quantity: "7", src:'financial' },
            ];
       const renderConditionally = () => {
         switch (activeComponentSrc) {
@@ -35,19 +35,19 @@ export default function NewSection(){
         <div
           key={index}
           className={`relative text-thecolor flex items-center m-24 mb-96 rounded-2xl transition-transform transform hover:scale-105 ${
-            activeComponentSrc === item.componentMySrc
+            activeComponentSrc === item.src
               ? "text-thecolor underline decoration-blue-500"
               : "hover:text-thecolor2"
           } top-0`}
-          onClick={() => setActiveComponentSrc(item.componentMySrc)}
+          onClick={() => setActiveComponentSrc(item.src)}
         >
           <img
             className={
-              activeComponentSrc === item.componentMySrc
+              activeComponentSrc === item.src
                 ? "bg-thecolor underline decoration-blue-500"
                 : "hover:bg-thecolor2"
             }
-            src={`public/${item.componentMySrc}.png`}
+            src={`public/${item.src}.png`}
             alt={item.name}
           />
           <h4>{item.name}</h4>
