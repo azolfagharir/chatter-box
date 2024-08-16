@@ -30,8 +30,9 @@ export const theme = {
     spacing: {
       '292': '31rem',
       '260': '28rem',
+      '84': '22rem',
     },inset: {
-      eye_top: '14rem', // Custom value
+      eye_top: '14rem', // Custom value 24rem
     }, boxShadow: {
       '3xl': '0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23)', // Custom intense shadow
       'custom-color': '0 10px 15px rgba(255, 165, 0, 0.5)' // Custom shadow with specific color (e.g., orange)
