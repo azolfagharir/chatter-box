@@ -1,11 +1,14 @@
 import { useState } from "react";
-
+import React from 'react';
+import Select from 'react-select';
+import {allServices} from "../../components/MyServices/AllSrc";
 export default function NewSection(){
-    const sectionMyServices = [
-        { name: "فنی", quantity: "7", src:'support' },
-        { name: "فروش", quantity: "7", src:'sell' },
-        { name: "مالی", quantity: "7", src:'financial' },
-           ];
+  const sectionMyServices = [
+    {quantity: "7", src: 'support' }, // Changed value to be unique and lowercase for better rendering
+    {quantity: "7", src: 'sell' }, // Changed value to be unique and lowercase for better rendering
+    {quantity: "7", src: 'financial' },
+  ];
+
       const renderConditionally = () => {
         switch (activeComponentSrc) {
           case "Closed":
@@ -21,13 +24,13 @@ export default function NewSection(){
         }
       };  const [activeComponentSrc, setActiveComponentSrc] = useState("AllSrc");
       const [NewTicketShown, setNewTicketShown] = useState(false);
-    
+      const [selectedOption, setSelectedOption] = useState(null);
+
     return(
     <>
              <div className="bg-hello2 w-[1100px] h-[600px] absolute top-24 right-96 rounded-2xl flex items-center justify-between p-4">
 
-      <button className="text-white top-0 absolute bg-NewTicket hover:bg-NewTicket2">
-      </button>
+   
       <h1 className="text-thecolor text-2xl top-4 absolute mx-260 font-bold	">
         ثبت تیکت جدید
       </h1>
@@ -54,6 +57,21 @@ export default function NewSection(){
           <span>{item.quantity}</span>
         </div>
       ))}
+      <h4 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-thecolor">مشکل مربوط به کدام سرویس است ؟
+      </h4>
+      
+        
+
+<div className="relative w-full h-screen flex flex-col items-center justify-center space-y-3">
+<div className="App text-black-900 bg-black-900">
+  <Select
+    Value={selectedOption}
+    onChange={setSelectedOption}
+    options={allServices} // Use the imported allServices array
+  />
+</div>
+
+        </div>
         </div>
     </>)
 }
