@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ChatBox from "../../components/ChatBox";
+import ChatContainer from "../../components/ChatContainer";
 import React from "react";
 import Select from "react-select";
 import { allServices } from "../../components/MyServices/AllSrc";
@@ -82,9 +82,8 @@ export default function NewSection() {
             options={allServices}
           />
         </div>
-        <div className="ticket-page">
-          <h1>Ticket Page</h1>
-          <ChatBox user={user} initialMessages={initialMessages} />
+        <div className="App">
+          <ChatContainer />
         </div>
       </div>
     </>
