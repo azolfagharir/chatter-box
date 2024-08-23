@@ -98,7 +98,7 @@ export default function Home() {
               {/* Second Element (aligned to the left) */}
             </div>
             <br />
-            <Link href="#" className="">
+            <Link to={"/panel"} className="">
               <button
                 className="bg-admin_apnel shadow-xl text-white w-full rounded-2xl py-2 transition-shadow duration-300 hover:shadow-3xl hover:shadow-admin_shadow hover:bg-hover_admin_panel"
                 type="submit"
@@ -108,7 +108,7 @@ export default function Home() {
             </Link>
           </form>
           <br />
-          <Link href="#" className="text-blue-500 hover:underline my-16">
+          <Link to={"/Signup"} className="text-blue-500 hover:underline my-16">
             ثبت نام نکرده ام
           </Link>
           <br />
