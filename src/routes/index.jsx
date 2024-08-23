@@ -10,7 +10,7 @@ const routes = [
     { path: PathConstants.Home, element: <Home /> },
     {path: PathConstants.Panel, element:<Panel />},
     {path: PathConstants.New, element:<New />},
-    {path: Signup.New, element:<Signup />},
+    {path: PathConstants.Signup, element:<Signup />},
     {path: PathConstants.Dashboard, element:<Dashboard />},
 
 ];
