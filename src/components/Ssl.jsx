@@ -1,8 +1,8 @@
+import WhitSection from "./WhitSection"
 export default function SSL(){
     return(
         <>
-        <h1>This is SSL page</h1>
-
+                   <WhitSection />
         </>
     )
 }

@@ -3,8 +3,8 @@ import ChatBox from './ChatBox'; // Import the ChatBox component
 
 export default function ChatContainer() {
   const [messages, setMessages] = useState([
-    { sender: "User", content: "Hello!", time: "12:30", status: "Delivered", avatar: "user_avatar_url" },
-    { sender: "Operator", content: "How can I assist you?", time: "12:45", status: "Seen", avatar: "operator_avatar_url" }
+    /*{ sender: "User", content: "Hello!", time: "12:30", status: "Delivered", avatar: "user_avatar_url" },
+    { sender: "Operator", content: "How can I assist you?", time: "12:45", status: "Seen", avatar: "operator_avatar_url" }*/
   ]);
 
   const sendMessage = (sender, content, avatar) => {

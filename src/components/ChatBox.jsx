@@ -9,8 +9,8 @@ export default function ChatBox({ user, messages, onSendMessage }) {
   };
 
   return (
-    <div className="chat-window">
-      {messages.map((msg, index) => (
+   <div className="chat-window">
+  {  /*  {messages.map((msg, index) => (
         <div key={index} className={`chat ${msg.sender === user.name ? 'chat-end' : 'chat-start'}`}>
           <div className="chat-image avatar">
             <div className="w-10 rounded-full">
@@ -37,7 +37,7 @@ export default function ChatBox({ user, messages, onSendMessage }) {
             }
           }}
         />
-      </div>
+      </div>*/}
     </div>
   );
 }

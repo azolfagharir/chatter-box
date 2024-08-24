@@ -1,7 +1,8 @@
+import WhitSection from "./WhitSection"
 export default function CloudyHost(){
     return(
         <>
-            <h1>this is cloudy-host page</h1>
-        </>
+            <WhitSection />
+            </>
     )
 }

@@ -41,7 +41,11 @@ export const theme = {
       '97': '25rem',
       '98': '26rem',
       '100': '33.5rem',
+      '101': '35.5rem',
+      '102': '40.5rem',
+      '103': '57rem',
       '99': '33rem',
+      '97': '28rem',
       '98': '26rem',
     },inset: {
       eye_top: '14rem', // Custom value 24rem

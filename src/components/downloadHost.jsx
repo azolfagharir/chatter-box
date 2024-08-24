@@ -1,7 +1,8 @@
+import WhitSection from "./WhitSection"
 export default function DownloadHost(){
     return(
         <>
-            <h1>this is download host page</h1>
+            <WhitSection />
         </>
     )
 }

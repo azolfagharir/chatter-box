@@ -42,7 +42,7 @@ export default function MyService() {
   return (<>
   
 <WhitSection /> 
-     <h1 className="text-thecolor text-2xl top-32 text-center mr-260 right-98 absolute font-bold	">سرویس های من</h1>
+     <h1 className="text-thecolor  top-28 text-center text-lg text-center right-64 lg:right-97 md:right-80 absolute font-bold	">سرویس های من</h1>
       {sectionMyServices.map((item, index) => (
         <div
         key={index}
