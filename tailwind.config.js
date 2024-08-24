@@ -8,6 +8,7 @@ export const theme = {
   extend: {
     colors: {
       MyOwn: '#e9edf7',
+      hover:'#e6f0f9',
       custome_2:'#f5f8fe',
       custome_eye:'#eff6fa',
       admin_apnel:'#318dc1',

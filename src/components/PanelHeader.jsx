@@ -13,7 +13,7 @@ return (
     <h2 className="text-PanelHeaderText text-center py-4 mx-auto">سرویس های من</h2>
 
     <div className="flex items-center">
-      <img src="/public/hamburger-menu.png" onClick={toggler} alt="hamburger-menu" className={`{'w-8 h-8 mt-4 cursor-pointer "  '}`}  />
+      <img src="/public/hamburger-menu.png" onClick={toggler} alt="hamburger-menu" className='w-8 h-8 mt-4 cursor-pointer'  />
     </div>
   </div>
 );

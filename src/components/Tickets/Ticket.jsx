@@ -4,6 +4,7 @@ import Progress from "../Tickets/Progress";
 import Opent from "../Tickets/Opent";
 import Answeared from "../Tickets/Answeared";
 import New from "/src/pages/New.jsx";
+import WhitSection from "../WhitSection";
 import PathConstants from "D:/chatter-box/src/routes/pathConstants.jsx";
 import { useState } from "react";
 export default function Tickets() {
@@ -31,8 +32,8 @@ export default function Tickets() {
   const [NewTicketShown, setNewTicketShown] = useState(false);
 
   return (
-    <div className="bg-hello2 w-[1100px] h-[600px] absolute top-24 right-96 rounded-2xl flex items-center justify-between p-4">
-      {NewTicketShown && <NewTicket />}
+  <>
+    <WhitSection />      {NewTicketShown && <NewTicket />}
 
       <button className="text-white top-0 absolute bg-NewTicket hover:bg-NewTicket2">
         <Link to={PathConstants.New}>تیکت جدید</Link>
@@ -66,6 +67,6 @@ export default function Tickets() {
       <div>
         <main className="w-full p-4 ">{renderConditionally()}</main>
       </div>
-    </div>
+</>
   );
 }

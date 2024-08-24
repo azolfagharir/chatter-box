@@ -5,6 +5,7 @@ import Domain from "../MyServices/Domain"
 import IaaS from "../MyServices/IaaS"
 import SSL from "./SSL"
 import CDN from "../MyServices/CDN"
+import WhitSection from "../WhitSection"
 import { useState } from "react"
 export default function MyService() {
   const sectionMyServices = [
@@ -38,9 +39,10 @@ export default function MyService() {
   };
   const [activeComponentSrc, setActiveComponentSrc] = useState('AllSrc');
 
-  return (
-    <div className="bg-hello2 w-[1100px] h-[600px] absolute top-24 right-96 rounded-2xl flex items-center justify-between p-4">
-      <h1 className="text-thecolor text-2xl top-4 absolute mx-260 font-bold	">سرویس های من</h1>
+  return (<>
+  
+<WhitSection /> 
+     <h1 className="text-thecolor text-2xl top-32 text-center mr-260 right-98 absolute font-bold	">سرویس های من</h1>
       {sectionMyServices.map((item, index) => (
         <div
         key={index}
@@ -58,6 +60,7 @@ export default function MyService() {
     <main className="w-full p-4">
           {renderConditionally()}
         </main>
-    </div>
+  </>
+
   );
 }

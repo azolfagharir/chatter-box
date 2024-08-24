@@ -2,6 +2,7 @@ import { useState } from "react";
 import ChatContainer from "../../components/ChatContainer";
 import React from "react";
 import Select from "react-select";
+import WhitSection from "../../components/WhitSection";
 import { allServices } from "../../components/MyServices/AllSrc";
 export default function NewSection() {
   const sectionMyServices = [
@@ -44,7 +45,7 @@ export default function NewSection() {
 
   return (
     <>
-      <div className="bg-hello2 w-[1100px] h-[600px] absolute top-24 right-96 rounded-2xl flex items-center justify-between p-4">
+        <WhitSection />
         <h1 className="text-thecolor text-2xl top-4 absolute mx-260 font-bold	">
           ثبت تیکت جدید
         </h1>
@@ -85,7 +86,6 @@ export default function NewSection() {
         <div className="App">
           <ChatContainer />
         </div>
-      </div>
     </>
   );
 }
