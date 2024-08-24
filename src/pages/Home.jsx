@@ -22,21 +22,20 @@ export default function Home() {
           <div class="flex items-center justify-center ">
             <img
               className="w-[70px] h-[70px]"
-              src="/public/logo.jpg"
+              src="/public/logo1.png"
               alt="image description"
             />
           </div>
           <div className="flex items-center justify-center mb-8">
             <img
               className="w-[70px] h-[34px]"
-              src="/public/logo.jpg"
+              src="/public/logo2.png"
               alt="image description"
             />
           </div>
           <form className="mx-4" action="">
-            <span className="absolute right-28 text-sm top-44 transform -translate-y-1/2 text-gray-400 text-left">
-              {" "}
-              <span className="text-red-400">*</span>:ایمیل
+            <span className="absolute right-28 md:right-40 lg:right-72 xl:right-98 2xl:right-100 text-sm top-44 transform -translate-y-1/2 text-gray-400 text-left">
+              <span className="text-red-400 ">*</span>:ایمیل
             </span>
             <input
               className="bg-white h-[44px] w-full shadow text-right pr-20 rounded-2xl focus:outline-none focus:shadow-xl focus:shadow-MyOwn transition-shadow duration-300"
@@ -46,7 +45,7 @@ export default function Home() {
             />
             <br />
             <br />
-            <span className="absolute right-24 text-sm top-60 transform -translate-y-1/2 text-gray-400 text-left">
+            <span className="absolute right-24 md:right-36 md:p-2 lg:right-70 xl:right-97 2xl:right-99 text-sm top-60 transform -translate-y-1/2 text-gray-400 text-left">
               {" "}
               <span className="text-red-400">*</span>:رمز عبور
             </span>
@@ -57,7 +56,7 @@ export default function Home() {
               placeholder="کلمه عبور خود را وارد کنید"
             />
             <button
-              className="bg-custome_eye  top-eye_top absolute right-292 w-14"
+              className="bg-custome_eye  top-eye_top absolute right-292 md:right-294 lg:right-296 xl:right-298 2xl:right-300 w-14"
               onClick={toggler}
             >
               {HidePass ? (

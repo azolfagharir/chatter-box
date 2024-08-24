@@ -26,11 +26,22 @@ export const theme = {
       NewTicket2:'#2a78a4',
     },width: {
       '288': '32rem',
+      
     },
     spacing: {
       '292': '31rem',
+      '294': '35rem',
+      '296': '43rem',
+      '298': '51rem',
+      '300': '59rem',
       '260': '28rem',
       '84': '22rem',
+      '70': '17rem',
+      '97': '25rem',
+      '98': '26rem',
+      '100': '33.5rem',
+      '99': '33rem',
+      '98': '26rem',
     },inset: {
       eye_top: '14rem', // Custom value 24rem
     }, boxShadow: {
