@@ -11,18 +11,18 @@ export default function WhitSection() {
   /*bg-hello2 w-[1100px] h-[600px] absolute top-24 right-96  flex items-center justify-between p-4 */
   return (
     <>
-      <div className="bg-hello2 w-[610px] h-[400px] md:w-[701px] md:h-[700px] lg:w-[960px] lg:h-[1000px] absolute rounded-2xl top-20 left-1/2 transform -translate-x-1/2">
+      <div className="bg-hello2 w-[610px] h-[400px] md:w-[701px] md:h-[700px] lg:w-[700px] lg:h-[800px] xl:h-[700px] xl:w-[950px]  2xl:w-[1200px] absolute rounded-2xl top-20 left-1/2  lg:left-96 xl:left-109 2xl:left-108 transform -translate-x-1/2">
         <img
           src="/public/search.png"
           onClick={toggler}
           alt="search"
-          className="right-4 top-28 w-[30px] h-[30px] absolute md:top-8 md:right-16 lg:right-16 hover:bg-hover hover:cursor-pointer "
+          className="right-4 top-28 w-[30px] h-[30px] absolute md:top-8 md:right-16 lg:right-20 hover:bg-hover hover:cursor-pointer "
         />
         <img
           src="/public/pin.png"
           onClick={toggler1}
           alt="pin"
-          className="top-28 left-4 w-[30px] h-[30px] absolute md:top-8 md:left-102 lg:left-103 hover:bg-hover hover:cursor-pointer "
+          className="top-28 left-4 w-[30px] h-[30px] absolute md:top-8 md:left-102 lg:left-109 xl:left-110 2xl:left-111 hover:bg-hover hover:cursor-pointer "
         />
         {showInput && (
           <input
