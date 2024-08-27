@@ -30,6 +30,7 @@ export const theme = {
       288: "32rem",
     },
     spacing: {
+      47:'9rem',
       292: "31rem",
       294: "35rem",
       296: "43rem",
