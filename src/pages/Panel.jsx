@@ -50,10 +50,10 @@ export default function Panel(props) {
   return (
     <>
       <PanelHeader setSidebarShown={setSidebarShown} SidebarShown={SidebarShown} />
-      <div className="flex ">
-        <div         className={`bg-theethic rounded-2xl max-h-[534px] overflow-y-auto right-10 top-20 lg:absolute ${SidebarShown ? 'sm:absolute ' : 'sm:hidden'}`}
+      <div className="flex  ">
+        <div         className={`bg-theethic rounded-2xl max-h-[534px] overflow-y-auto right-10 top-32 lg:absolute ${SidebarShown ? 'sm:absolute ' : 'sm:hidden'}`}
         >
-        <RightSideBarSections
+        <RightSideBarSections 
               activeComponent={activeComponent}
               setActiveComponent={setActiveComponent}
             />

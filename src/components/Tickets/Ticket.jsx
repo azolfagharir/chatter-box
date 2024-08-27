@@ -76,7 +76,7 @@ export default function Tickets() {
         </Link>
       </button>
 
-      <h1 className="text-thecolor top-32 text-center text-lg right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold">
+      <h1 className="text-thecolor top-36 text-center text-lg right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold">
         تیکت های من
       </h1>
 

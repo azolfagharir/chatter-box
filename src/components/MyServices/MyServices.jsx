@@ -7,6 +7,7 @@ import SSL from "./SSL"
 import CDN from "../MyServices/CDN"
 import WhitSection from "../WhitSection"
 import { useState } from "react"
+import BeautifueSideBar from "../BeautifueSideBar"
 export default function MyService() {
   const sectionMyServices = [
     { name: "سایر محصولات", quantity: "7", componentMySrc: "OtherProducts" },
@@ -40,9 +41,9 @@ export default function MyService() {
   const [activeComponentSrc, setActiveComponentSrc] = useState('AllSrc');
 
   return (<>
-  
+  <BeautifueSideBar />
 <WhitSection /> 
-     <h1 className="text-thecolor  top-28 text-center text-lg text-center right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold	">سرویس های من</h1>
+     <h1 className="text-thecolor top-36 text-center text-lg text-center right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold	">سرویس های من</h1>
       {sectionMyServices.map((item, index) => (
         <div
         key={index}
