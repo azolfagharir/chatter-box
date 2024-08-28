@@ -5,9 +5,9 @@ import WhitSection from "../../components/WhitSection";
 import { allServices } from "../../components/MyServices/AllSrc";
 export default function NewSection() {
   const sectionMyServices = [
-    { quantity: "7", src: "support" }, // Changed value to be unique and lowercase for better rendering
-    { quantity: "7", src: "sell" }, // Changed value to be unique and lowercase for better rendering
-    { quantity: "7", src: "financial" },
+    { src: "support", name: "پشتیبانی فنی" },
+    { src: "sell", name: "فروش" },
+    { src: "financial", name: "مالی و اداری" },
   ];
   const renderConditionally = () => {
     switch (activeComponentSrc) {
@@ -27,62 +27,56 @@ export default function NewSection() {
   const [NewTicketShown, setNewTicketShown] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
-  const user = {
-    name: "User",
-    avatar: "user_avatar_url",
-  };
-
-  const initialMessages = [
-    {
-      sender: "Operator",
-      content: "How can I assist you?",
-      time: "12:45",
-      status: "Seen",
-      avatar: "operator_avatar_url",
-    },
-  ];
-
   return (
     <>
-        <WhitSection />
-        <h1 className="text-thecolor text-2xl top-4 absolute mx-260 font-bold	">
-          ثبت تیکت جدید
-        </h1>
-        {sectionMyServices.map((item, index) => (
-          <div className="invisible hidden">
-          <div
-            key={index}
-            className={`sm:hidden md:relative text-thecolor md:flex md:items-center m-24 mb-96 rounded-2xl transition-transform transform hover:scale-105 ${
-              activeComponentSrc === item.src
-                ? "text-thecolor underline decoration-blue-500"
-                : "hover:text-thecolor2"
-            } top-0`}
-            onClick={() => setActiveComponentSrc(item.src)}
-          >
-            <img
-              className={
-                activeComponentSrc === item.src
-                  ? "bg-thecolor underline decoration-blue-500"
-                  : "hover:bg-thecolor2"
-              }
-              src={`public/${item.src}.png`}
-              alt={item.name}
-            />
-            <h4>{item.name}</h4>
-            <span>{item.quantity}</span>
-          </div></div>
-        ))}
-        <h4 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-thecolor">
-          مشکل مربوط به کدام سرویس است ؟
-        </h4>
-
-        <div className="absolute top-84 left-260 w-52">
-          <Select
-            value={selectedOption}
-            onChange={setSelectedOption}
-            options={allServices}
-          />
+      <WhitSection />
+      <h1 className="text-thecolor top-36 text-center text-lg right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold">
+        ثبت تیکت جدید
+      </h1>
+      <div className="relative mt-8 lg:ml-0 ">
+        <div className="flex flex-wrap justify-start space-x-4 md:space-x-32 ">
+          {sectionMyServices.map((item, index) => (
+            <div className="">
+              <div
+                key={index}
+                className={` md:relative text-thecolor md:flex md:flex-col md:items-center  md:p-4 md:mb-6 md:rounded-2xl md:transition-transform md:transform hover:scale-105 lg:right-36 lg:space-x-8 lg:space-x-0 xl:space-x-32 xl:right-40 ${
+                  activeComponentSrc === item.componentMySrc
+                    ? "text-thecolor underline decoration-blue-500"
+                    : "hover:text-thecolor2"
+                }`}
+                onClick={() => setActiveComponentSrc(item.src)}
+              >
+                <div className="w-20 h-20 mb-2 ">
+                  <img
+                    className={
+                      activeComponentSrc === item.src
+                        ? "bg-thecolor underline decoration-blue-500"
+                        : "hover:bg-thecolor2"
+                    }
+                    src={`public/${item.src}.png`}
+                    alt={item.name}
+                  />
+                </div>
+                <h4 className="text-center">{item.name}</h4>
+              </div>
+            </div>
+          ))}{" "}
         </div>
+      </div>
+      <h4 className="absolute top-96 left-1/2 lg:left-96  xl:left-100 transform -translate-x-1/2 -translate-y-1/2 text-center text-thecolor 2xl:left-102">
+        مشکل مربوط به کدام سرویس است ؟
+      </h4>
+
+      <div className="absolute top-97 left-56 w-52 md:left-72 xl:left-125 2xl:left-100">
+        <Select
+          value={selectedOption}
+          onChange={setSelectedOption}
+          options={allServices}
+        />
+      </div>
+      <h4 className="absolute top-100 left-1/2 transform xl:left-100 -translate-x-1/2 -translate-y-1/2 text-center text-thecolor lg:left-86 2xl:left-102">
+        موضوع تیکت را وارد کنید
+      </h4>
     </>
   );
 }

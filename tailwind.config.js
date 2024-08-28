@@ -38,6 +38,8 @@ export const theme = {
       300: "59rem",
       260: "28rem",
       84: "22rem",
+      86: "24.5rem",
+      125: "27rem",
       70: "17rem",
       97: "25rem",
       98: "26rem",

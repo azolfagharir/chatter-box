@@ -58,7 +58,7 @@ export default function MyService() {
     {sectionMyServices.map((item, index) => (
       <div
         key={index}
-        className={`hidden md:relative text-thecolor md:flex md:flex-col md:items-center md:p-4 md:mb-6 md:rounded-2xl md:transition-transform md:transform hover:scale-105 lg:right-36 lg:space-x-8 xl:space-x-16 ${
+        className={`hidden md:relative text-thecolor md:flex md:flex-col md:items-center md:p-4 md:mb-6 md:rounded-2xl md:transition-transform md:transform hover:scale-105 lg:right-32 xl:right-36 lg:text-xs lg:space-x-0 xl:space-x-16 2xl:space-x-20 2xl:right-48 ${
           activeComponentSrc === item.componentMySrc
             ? "text-thecolor underline decoration-blue-500"
             : "hover:text-thecolor2"

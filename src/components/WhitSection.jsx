@@ -10,7 +10,7 @@ export default function WhitSection() {
   }
   return (
     <>
-      <div className="top-32 bg-hello2 w-[610px] h-[400px] md:w-[701px] md:h-[700px] lg:w-[700px] lg:h-[800px] xl:h-[700px] xl:w-[950px]  2xl:w-[1200px] absolute rounded-2xl top-20 left-1/2  lg:left-96 xl:left-109 2xl:left-108 transform -translate-x-1/2">
+      <div className="top-32 bg-hello2 w-[610px] h-[600px] md:w-[701px] md:h-[700px] lg:w-[700px] lg:h-[800px] xl:h-[700px] xl:w-[950px]  2xl:w-[1200px] absolute rounded-2xl top-20 left-1/2  lg:left-96 xl:left-109 2xl:left-108 transform -translate-x-1/2">
         <img
           src="/public/search.png"
           onClick={toggler}
