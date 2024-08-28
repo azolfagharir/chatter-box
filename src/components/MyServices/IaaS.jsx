@@ -1,7 +1,7 @@
 export default function IaaS(){
     return(
             <>
-                <div>
+                <div className="absolute"> 
                     this is IaaS
                 </div>
             </>

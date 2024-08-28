@@ -1,7 +1,7 @@
 export default function CDN(){
     return(
             <>
-                <div>
+                <div className="absolute">
                     this is cdn
                 </div>
             </>

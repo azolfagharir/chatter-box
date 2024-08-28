@@ -1,7 +1,7 @@
 export default function OtherProducts(){
     return(
             <>
-                <div>
+                <div className="absolute">
                     this is OtherProducts
                 </div>
             </>

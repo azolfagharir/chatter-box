@@ -59,12 +59,11 @@ const SideBarList = [
     imagename: "/public/account.png",
     component: "Account",
   },
-  // Add more items as needed
 ];
 
 export default function RightSideBarSections({ setActiveComponent, activeComponent }) {
   return (
-    <div className="flex flex-col space-y-4 rounded-2xl hover:cursor-pointer top-32">
+    <div className="z-50 flex flex-col space-y-4 rounded-2xl hover:cursor-pointer top-32">
       {SideBarList.map((item, index) => (
         <div
           key={index}

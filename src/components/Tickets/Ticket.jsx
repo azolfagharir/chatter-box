@@ -86,35 +86,35 @@ export default function Tickets() {
       <h1 className="text-thecolor top-36 text-center text-lg right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold">
         تیکت های من
       </h1>
-
-      <div className="hidden md:flex md:flex-wrap md:space-x-4">
-        {sectionMyServices.map((item, index) => (
-          <div
-            key={index}
-            className={`relative text-thecolor md:flex items-center m-4 mb-6 rounded-2xl transition-transform transform hover:scale-105 ${
+      <div className="relative mt-8 lg:ml-0">
+  <div className="flex flex-wrap justify-start space-x-4">
+    {sectionMyServices.map((item, index) => (
+      <div
+        key={index}
+        className={`hidden md:relative text-thecolor md:flex md:flex-col md:items-center md:p-4 md:mb-6 md:rounded-2xl md:transition-transform md:transform hover:scale-105 lg:right-36 lg:space-x-8 xl:space-x-16 ${
+          activeComponentSrc === item.componentMySrc
+            ? "text-thecolor underline decoration-blue-500"
+            : "hover:text-thecolor2"
+        }`}
+        onClick={() => setActiveComponentSrc(item.componentMySrc)}
+      >
+        <div className="w-16 h-16 mb-2 ">
+          <img
+            className={`w-full h-full object-cover ${
               activeComponentSrc === item.componentMySrc
-                ? "text-thecolor underline decoration-blue-500"
-                : "hover:text-thecolor2"
+                ? "bg-thecolor underline decoration-blue-500"
+                : "hover:bg-thecolor2"
             }`}
-            onClick={() => setActiveComponentSrc(item.componentMySrc)}
-          >
-            <div className="w-8">
-              <img
-                className={
-                  activeComponentSrc === item.componentMySrc
-                    ? "bg-thecolor underline decoration-blue-500"
-                    : "hover:bg-thecolor2"
-                }
-                src={`/public/${item.componentMySrc}.png`}
-                alt={item.name}
-              />
-            </div>
-
-            <h4>{item.name}</h4>
-            <span>{item.quantity}</span>
-          </div>
-        ))}
+            src={`/public/${item.componentMySrc}.png`}
+            alt={item.name}
+          />
+        </div>
+        <h4 className="text-center">{item.name}</h4>
+        <span>{item.quantity}</span>
       </div>
+    ))}
+  </div>
+</div>
 
       <div className="absolute top-48 left-42 w-52 md:hidden">
         <Select
@@ -130,7 +130,7 @@ export default function Tickets() {
       </div>
 
       <div>
-        <main className="w-full p-4 ">{renderConditionally()}</main>
+        <main className="absolute">{renderConditionally()}</main>
       </div>
     </>
   );

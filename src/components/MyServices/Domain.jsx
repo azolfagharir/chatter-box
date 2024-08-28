@@ -1,7 +1,7 @@
 export default function Domain(){
     return(
             <>
-                <div>
+                <div className="absolute">
                     this is Domain
                 </div>
             </>

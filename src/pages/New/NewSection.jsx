@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ChatContainer from "../../components/ChatContainer";
 import React from "react";
 import Select from "react-select";
 import WhitSection from "../../components/WhitSection";
@@ -50,9 +49,10 @@ export default function NewSection() {
           ثبت تیکت جدید
         </h1>
         {sectionMyServices.map((item, index) => (
+          <div className="invisible hidden">
           <div
             key={index}
-            className={`relative text-thecolor flex items-center m-24 mb-96 rounded-2xl transition-transform transform hover:scale-105 ${
+            className={`sm:hidden md:relative text-thecolor md:flex md:items-center m-24 mb-96 rounded-2xl transition-transform transform hover:scale-105 ${
               activeComponentSrc === item.src
                 ? "text-thecolor underline decoration-blue-500"
                 : "hover:text-thecolor2"
@@ -70,7 +70,7 @@ export default function NewSection() {
             />
             <h4>{item.name}</h4>
             <span>{item.quantity}</span>
-          </div>
+          </div></div>
         ))}
         <h4 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-thecolor">
           مشکل مربوط به کدام سرویس است ؟
@@ -82,9 +82,6 @@ export default function NewSection() {
             onChange={setSelectedOption}
             options={allServices}
           />
-        </div>
-        <div className="App">
-          <ChatContainer />
         </div>
     </>
   );

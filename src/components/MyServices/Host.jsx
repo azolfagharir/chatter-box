@@ -1,7 +1,7 @@
 export default function Host(){
     return(
             <>
-                <div>
+                <div className="absolute">  
                     this is Host
                 </div>
             </>

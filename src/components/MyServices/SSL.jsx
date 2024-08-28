@@ -1,7 +1,7 @@
 export default function SSL(){
     return(
             <>
-                <div>
+                <div className="absolute">
                     this is SSL
                 </div>
             </>
