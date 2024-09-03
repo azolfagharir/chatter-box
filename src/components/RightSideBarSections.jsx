@@ -63,7 +63,7 @@ const SideBarList = [
 
 export default function RightSideBarSections({ setActiveComponent, activeComponent }) {
   return (
-    <div className="z-50 flex flex-col space-y-4 rounded-2xl hover:cursor-pointer top-32">
+    <div className=" flex flex-col space-y-4 rounded-2xl hover:cursor-pointer top-32">
       {SideBarList.map((item, index) => (
         <div
           key={index}
