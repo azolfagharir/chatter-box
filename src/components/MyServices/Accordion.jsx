@@ -4,7 +4,8 @@ import { Space, IconPrimary } from "dnb-ui-lib/components";
 import { makeUniqueId } from "dnb-ui-lib/shared/component-helper";
 import styled from "@emotion/styled";
 
-export default function Accordion({
+function Accordion({
+  props,
   top,
   right,
   bottom,
@@ -45,6 +46,7 @@ export default function Accordion({
     </StyledCollapsible>
   );
 }
+export default Accordion;
 
 const StyledCollapsible = styled(Space)`
   .Collapsible {
