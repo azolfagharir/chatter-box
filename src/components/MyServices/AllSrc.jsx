@@ -87,12 +87,48 @@ export default function AllSrc() {
               </div>
               <button className="w-full bg-thebtn text-lovelyBlue">
                 مدیریت سرویس
-                <Link to={''} />
+                <Link to={""} />
               </button>
             </div>
           </Accordion>
         </div>
-      ))}
+      ))}{" "}
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <br className="hidden md:flex" />
+      <div className="flex flex-col space-y-4">
+      {allServices.map((item) => (
+          <div
+            key={item.id}
+            className="hidden md:block p-4 bg-white shadow-md rounded-md w-full md:w-102 lg:w-96 relative"
+          >
+            <div className="flex justify-between items-center mb-4">
+              <button className="bg-thebtn text-lovelyBlue px-4 py-2 rounded">
+                <Link to={"#"}>&lt;-مدیریت سرویس</Link>
+              </button>
+              <h1 className="text-lg text-thecolor absolute right-12 top-2">{item.nameWeb}</h1>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                className="w-8 h-8 my-2 absolute right-2 top-3"
+                src="/public/domain-allsrc.png"
+                alt="service-icon"
+              />
+              <h3 className="text-lg text-thecolor absolute right-12 top-8">{item.type}</h3>
+            </div>
+          </div>
+        ))}*
+      </div>
     </div>
   );
 }
