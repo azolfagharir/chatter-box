@@ -52,7 +52,7 @@ export default function MyService() {
     <>
       <BeautifueSideBar />
       <WhitSection />{" "}
-      <div className="relative md:absolute md:top-32 md:left-4 mt-8 md:top-44  text-sm">
+      <div className="relative md:absolute md:top-32 md:left-4 lg:left-44 2xl:left-60 mt-8 md:top-44  text-sm">
   {/* Change the flex-wrap to nowrap and justify-content as needed */}
   <div className="flex flex-nowrap justify-start space-x-9 font-bold	">
     {sectionMyServices.map((item, index) => (

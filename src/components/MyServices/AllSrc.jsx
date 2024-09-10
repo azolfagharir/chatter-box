@@ -93,24 +93,24 @@ export default function AllSrc() {
           </Accordion>
         </div>
       ))}{" "}
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <br className="hidden md:flex" />
-      <div className="flex flex-col space-y-4">
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <br className="hidden md:flex lg:hidden" />
+      <div className="flex flex-col space-y-4 md:absolute md:top-72 md:left-16 lg:absolute top-96 lg:left-12">
       {allServices.map((item) => (
           <div
             key={item.id}
-            className="hidden md:block p-4 bg-white shadow-md rounded-md w-full md:w-102 lg:w-96 relative"
+            className="hidden md:block p-4 bg-white shadow-md rounded-md md:w-102 lg:ml-0 lg:w-102 lg:left-0 lg:top-0 xl:w-110 2xl:w-111 relative"
           >
             <div className="flex justify-between items-center mb-4">
               <button className="bg-thebtn text-lovelyBlue px-4 py-2 rounded">
@@ -118,16 +118,16 @@ export default function AllSrc() {
               </button>
               <h1 className="text-lg text-thecolor absolute right-12 top-2">{item.nameWeb}</h1>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ">
               <img
-                className="w-8 h-8 my-2 absolute right-2 top-3"
+                className="w-8 h-8 my-2 absolute right-2 top-3 lg:left-"
                 src="/public/domain-allsrc.png"
                 alt="service-icon"
               />
               <h3 className="text-lg text-thecolor absolute right-12 top-8">{item.type}</h3>
             </div>
           </div>
-        ))}*
+        ))}
       </div>
     </div>
   );
