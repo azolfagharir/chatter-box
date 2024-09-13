@@ -5,7 +5,11 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   extend: {
     colors: {
+      account1:"#e9eef5",
+      account1:"#e9eef5",
       thebtn:"#d7e8f5",
+      theroof2:"#eaeef6",
+      theroof:"#eff3fa",
       lovelyBlue:"#318dc1",
       lovelygray:'#eff2fa',
       MyOwn: "#e9edf7",
@@ -64,6 +68,8 @@ export const theme = {
       113: "27rem",
       98: "26rem",
       140: "32rem",
+      139: "18.5rem",
+      138: "5.5rem",
     },
     inset: {
       eye_top: "14rem", 
