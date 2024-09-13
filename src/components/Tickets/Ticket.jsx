@@ -54,15 +54,15 @@ export default function Tickets() {
     const section = getSection();
     switch (activeComponentSrc) {
       case "Closed":
-        return <Closed section={section} />;
+        return <Closed  section={section} />;
       case "Progress":
-        return <Progress section={section} />;
+        return <Progress  section={section} />;
       case "Opent":
-        return <Opent section={section} />;
+        return <Opent  section={section} />;
       case "Answeared":
-        return <Answeared section={section} />;
+        return <Answeared  section={section} />;
       default:
-        return <Closed section={section} />;
+        return <Closed  section={section} />;
     }
   };
 
@@ -83,7 +83,7 @@ export default function Tickets() {
         </Link>
       </button>
 
-      <h1 className="text-thecolor top-36 text-center text-lg right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold">
+      <h1 className="text-thecolor top-36 text-center text-lg right-64 lg:right-101 xl:right-104 2xl:right-112 md:right-80 xl:right-101 2xl:right-104 absolute font-bold ">
         تیکت های من
       </h1>
       <div className="relative mt-8 lg:ml-0">
@@ -91,7 +91,7 @@ export default function Tickets() {
     {sectionMyServices.map((item, index) => (
       <div
         key={index}
-        className={`hidden md:relative text-thecolor md:flex md:flex-col md:items-center md:p-4 md:mb-6 md:rounded-2xl md:transition-transform md:transform hover:scale-105 lg:right-36 lg:space-x-8 xl:space-x-16 ${
+        className={`hidden md:top-32 md:relative text-thecolor md:flex md:flex-col md:items-center md:p-4 md:mb-6 md:rounded-2xl md:transition-transform md:transform hover:scale-105 lg:right-36  lg:space-x-8 xl:space-x-16  ${
           activeComponentSrc === item.componentMySrc
             ? "text-thecolor underline decoration-blue-500"
             : "hover:text-thecolor2"
@@ -129,9 +129,10 @@ export default function Tickets() {
         />
       </div>
 
-      <div>
-        <main className="absolute">{renderConditionally()}</main>
-      </div>
+      <div className="w-full ">
+  {renderConditionally()}
+</div>
+
     </>
   );
 }

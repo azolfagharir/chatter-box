@@ -5,13 +5,13 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   extend: {
     colors: {
-      account1:"#e9eef5",
-      account1:"#e9eef5",
-      thebtn:"#d7e8f5",
-      theroof2:"#eaeef6",
-      theroof:"#eff3fa",
-      lovelyBlue:"#318dc1",
-      lovelygray:'#eff2fa',
+      account1: "#e9eef5",
+      account1: "#e9eef5",
+      thebtn: "#d7e8f5",
+      theroof2: "#eaeef6",
+      theroof: "#eff3fa",
+      lovelyBlue: "#318dc1",
+      lovelygray: "#eff2fa",
       MyOwn: "#e9edf7",
       hover: "#e6f0f9",
       custome_2: "#f5f8fe",
@@ -35,7 +35,7 @@ export const theme = {
       288: "32rem",
     },
     spacing: {
-      47:'9rem',
+      47: "9rem",
       292: "31rem",
       294: "35rem",
       296: "43rem",
@@ -62,7 +62,8 @@ export const theme = {
       110: "56rem",
       111: "72rem",
       112: "54rem",
-      42: '15rem', 
+      42: "15rem",
+      434: "15.5rem",
       99: "33rem",
       97: "28rem",
       113: "27rem",
@@ -71,8 +72,11 @@ export const theme = {
       139: "18.5rem",
       138: "5.5rem",
     },
+    borderRadius: {
+      "super-rounded": "150rem", 
+    },
     inset: {
-      eye_top: "14rem", 
+      eye_top: "14rem",
     },
     boxShadow: {
       "3xl": "0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23)", // Custom intense shadow
