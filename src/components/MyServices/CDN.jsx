@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Accordion from "./Accordion"; // Make sure this import points to your actual Accordion component
-
 export const allServices = [
   {
     value: "service-1",
     label: "فنی - hello world.com",
     nameWeb: "hello world.com",
-    type: "domain",
+    type: "CDN",
     price: "4000",
     dateFinish: "4/7/1403",
     operation: "watch the service",
@@ -17,7 +16,7 @@ export const allServices = [
     value: "service-1",
     label: "فنی - hello world.com",
     nameWeb: "goodbye world.com",
-    type: "domain",
+    type: "SSL",
     price: "4000",
     dateFinish: "4/7/1403",
     operation: "watch the service",
@@ -43,6 +42,26 @@ export const allServices = [
     operation: "watch the service",
     id: "4",
   },
+  {
+    value: "service-1",
+    label: "فنی - hello world.com",
+    nameWeb: "never world.com",
+    type: "Laas",
+    price: "4000",
+    dateFinish: "4/7/1403",
+    operation: "watch the service",
+    id: "5",
+  },
+  {
+    value: "service-1",
+    label: "فنی - hello world.com",
+    nameWeb: "never world.com",
+    type: "domain",
+    price: "4000",
+    dateFinish: "4/7/1403",
+    operation: "watch the service",
+    id: "6",
+  },
 ];
 
 export default function CDN() {
@@ -64,6 +83,7 @@ export default function CDN() {
       <br className="md:hidden" />
       <br className="md:hidden" />
       {allServices.map((item) => (
+         item.type === "CDN" ? (
         <div className="w-full bg- md:hidden" key={item.id}>
           <img
             className="w-4 h-4 absolute right-10 mt-8"
@@ -91,7 +111,7 @@ export default function CDN() {
               </button>
             </div>
           </Accordion>
-        </div>
+        </div> ) :null
       ))}{" "}
       <br className="hidden md:flex lg:hidden" />
       <br className="hidden md:flex lg:hidden" />
@@ -108,6 +128,7 @@ export default function CDN() {
       <br className="hidden md:flex lg:hidden" />
       <div className="flex flex-col space-y-4 md:absolute md:top-72 md:left-16 lg:absolute top-96 lg:left-12">
       {allServices.map((item) => (
+         item.type === "CDN" ? (
           <div
             key={item.id}
             className="hidden md:block p-4 bg-white shadow-md rounded-md md:w-102 lg:ml-0 lg:w-102 lg:left-0 lg:top-0 xl:w-110 2xl:w-111 relative"
@@ -126,7 +147,7 @@ export default function CDN() {
               />
               <h3 className="text-lg text-thecolor absolute right-12 top-8">{item.type}</h3>
             </div>
-          </div>
+          </div>) :null
         ))}
       </div>
     </div>

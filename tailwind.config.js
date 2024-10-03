@@ -5,6 +5,7 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   extend: {
     colors: {
+      account3:"#31c1b0",
       account1: "#e9eef5",
       account1: "#e9eef5",
       thebtn: "#d7e8f5",

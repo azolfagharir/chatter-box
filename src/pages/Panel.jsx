@@ -3,7 +3,7 @@ import PanelHeader from "../components/PanelHeader";
 import RightSideBarSections from "../components/RightSideBarSections";
 import MyService from "../components/MyServices/MyServices";
 import Domain from "../components/Domain";
-import CloudyHost from "../components/CloudyHost";
+import CloudyHost from "../components/cloudyHost/cloudyHost.jsx";
 import CloudyServer from "../components/CloudyServer";
 import CloudySpace from "../components/CloudySpace";
 import SSL from "../components/Ssl";

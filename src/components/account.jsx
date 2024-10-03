@@ -25,7 +25,7 @@ export default function Account() {
           </Link>
         </button>
 
-        <div className="top-36 bg-hello2 w-[610px] h-[600px] md:w-[701px] md:h-[700px] lg:w-[700px] lg:h-[800px] xl:h-[700px] xl:w-[950px]  2xl:w-[1200px] absolute left-1/2  lg:left-82 xl:left-109 2xl:left-108 transform -translate-x-1/2">
+        <div className="top-36 bg-hello2 w-[610px] h-[600px] md:w-[701px] md:h-[700px] lg:w-[700px] lg:h-[800px] xl:h-[700px] xl:w-[950px]  2xl:w-[1200px] absolute left-1/2  lg:left-96 xl:left-109 2xl:left-108 transform -translate-x-1/2">
           <p className="text-thecolor top-8 text-center right-64 md:right-139 lg:right-82 xl:right-97 2xl:right-64 md:right-80 xl:right-101 2xl:right-101 absolute font-bold	">
             مشخصات من
           </p>

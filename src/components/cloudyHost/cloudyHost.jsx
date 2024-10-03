@@ -1,5 +1,5 @@
-import WhitSection from "./WhitSection"
-import BeautifueSideBar from "./BeautifueSideBar"
+import WhitSection from "../WhitSection"
+import BeautifueSideBar from "../BeautifueSideBar"
 export default function CloudyHost(){
     return(
         <>   <BeautifueSideBar />
